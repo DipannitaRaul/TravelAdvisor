@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/Home.css">
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/7ff712a10f.js" crossorigin="anonymous"></script>
+    <title>Travel Advisor/home</title>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.jpg" alt="logo" width="80px">
+                </a>
+                <button class="navbar-toggler toggler-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" onclick="beActive(1)"
+                                id="home_link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#about_us" onclick="beActive(2)"
+                                id="about_link">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-warning dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="beActive(3)">
+                              Packages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#package_part">Our Popular Packages</a></li>
+                              <li><a class="dropdown-item" href="Package.html">Book Packages</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#go_to_contact" onclick="beActive(4)"
+                                id="contact_link">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-light bg-warning text-light" type="submit" id="startbtn"><a
+                                href="Login.html">Get Started</a></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner part -->
+        <section class="banner">
+            <div class="banner_text">
+                <h1>Travel Across The World</h1>
+                <p>Search your favourite destination</p>
+                <input type="text" placeholder="Search country or city">
+                <br>
+                <input type="submit" value="Search">
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <!-- About part -->
+
+        <section class="about" id="about_us">
+            <h1>About Us</h1>
+            <div class="about_img">
+                <!-- <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg"
+                        alt="img"> -->
+                <img src="https://media.cntraveler.com/photos/5fc68194225457188dc8081b/master/w_2955,h_1970,c_limit/Venice-GettyImages-997402230.jpg"
+                    alt="">
+
+            </div>
+            <div class="about_text">
+                <p>We are a India based travel agent! However, the journey wasn’t easy. Travel advisor has become
+                    the number one traveling agency due to hard work, consistency, and professional approach. Being
+                    recognized as the best Kolkata's travel agency by renowned newspaper portals in West Bengal, we
+                    conduct international tours to Bali, Singapore, Malaysia, Italy, Maldives, Bangkok, Paris,
+                    SriLanka and Hongkong, along with all the places in India. For a safe and secured travel
+                    experience, contact the best travel agents in Kolkata i.e. Travel Advisor.</p>
+                <hr>
+                <i class="fa-solid fa-quote-left"></i>
+                <p class="quote">The world is a book and those who do not travel read only one page</p>
+                <br>
+                <p class="author">- St Augustine</p>
+        </section>
+
+        <!-- Packages Part -->
+
+        <section class="packages" id="package_part">
+            <h1>Our Popular International Trips</h1>
+            <div class="inter_trips">
+                <div class="inter_places">
+                    <img src="https://img.freepik.com/free-photo/blue-villa-beautiful-sea-hotel_1203-5316.jpg?w=2000"
+                        alt="image" width="200">
+                    <p>Maldives Trip</p>
+                    <button class="tripBtn">Book now</button>
+                </div>
+
+                <div class="inter_places">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/81/30/3f/caption.jpg?w=700&h=-1&s=1&cx=1846&cy=1833&chk=v1_6ae0a81ae3361e988707"
+                        alt="image" width="200">
+                    <p>Santorini Trip</p>
+                    <button class="tripBtn">Book now</button>
+                </div>
+
+                <div class="inter_places">
+                    <img src="https://img.freepik.com/free-photo/young-woman-standing-temple-gates-lempuyang-luhur-temple-bali-indonesia-vintage-tone_335224-365.jpg"
+                        alt="image" width="200">
+                    <p>Bali Trip</p>
+                    <button class="tripBtn">Book now</button>
+                </div>
+
+                <div class="inter_places">
+                    <img src="https://cdn.britannica.com/65/162465-050-9CDA9BC9/Alps-Switzerland.jpg" alt="image"
+                        width="200">
+                    <p>Switzerland Trip</p>
+                    <button class="tripBtn">Book now</button>
+                </div>
+            </div>
+
+            <h1>Our Popular Trips In India & Around</h1>
+            <div class="indian_trips">
+                <div class="indian_places">
+                    <img src="https://wallpaperaccess.com/full/4130400.jpg" alt="image" width="200">
+                    <p>Nepal Trip</p>
+                    <button class="tripBtn">Book now</button>
+                </div>
+                <div class="indian_places">
+                    <img src="https://assets.vogue.in/photos/61e67a3fbce2639653e15541/3:4/w_1097,h_1463,c_limit/Kashmir.jpeg"
+                        alt="image" width="200">
+                    <p>Kashmir Trip</p>
+                    <button class="tripBtn">Book now</button>
+
+                </div>
+                <div class="indian_places">
+                    <img src="https://www.meghalayatourism.in/wp-content/uploads/2022/07/Home-Carousel-2.jpg"
+                        alt="image" width="200">
+                    <p>Meghalaya Trip</p>
+                    <button class="tripBtn">Book now</button>
+
+                </div>
+                <div class="indian_places">
+                    <img src="https://images.unsplash.com/photo-1613339027986-b94d85708995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lra2ltfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                        alt="image" width="200">
+                    <p>Sikkim Trip</p>
+                    <button class="tripBtn">Book now</button>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Choose part -->
+
+        <section class="choose">
+            <h1 class="choose_heading">Why Should You Choose us?</h1>
+            <p>Trips are meant to refresh your soul and not to take unwanted headaches. With us, you can enjoy the
+                tour with limpid pleasure. There will be no hazards for booking tickets or waiting for vehicles. In
+                fact, you don’t have to think of the special permits when needed. All you are expected is to
+                co-operate with us and relax. Therefore, give word to the Travel Advisor, the top-notch travel tour
+                operator, and explore the unexplored in a pocket-friendly price range for hotels, unknown places,
+                rain forest, waterfalls, solo trips, adventure trips, family destinations, or even international
+                locations.</p>
+            <div class="reasons_para1">
+                <div class="reason">
+                    <i class="fa-solid fa-plane"></i>
+                    <h1>Affordable discounted rates</h1>
+                    <hr>
+                    <p>Packages can be different for the tourists. For example, for the same location, we offer
+                        separate packages for different purposes. We have family packages, 5 days- 6 nights
+                        honeymoon trips, romantic couple honeymoon packages and more. Only a skilled travel agent
+                        can give you the best trip of your life.</p>
+                </div>
+                <div class="reason">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h1>Well-connected tourism</h1>
+                    <hr>
+                    <p>Healthy tourism connections are bliss to grow a business. We are well-connected to all the
+                        reputed tour operators in the town. To be the best among all the travel agencies we have
+                        maintained a peaceful relationship with other operators. Such steps boost up our skills,
+                        brighten our images, and help us to grow smother yet faster.</p>
+                </div>
+
+            </div>
+            <div class="reasons_para2">
+                <div class="reason">
+                    <i class="fa-solid fa-landmark"></i>
+                    <h1>EMI options for tourist</h1>
+                    <hr>
+                    <p>Do you wish to explore foreign countries but not getting enough courage due to the huge
+                        package cost? Don’t be mournful! Have you yet checked our EMI options? Unlike other travel
+                        agencies, we are here with unbelievable EMI options for our trips. Don’t let your dreams die
+                        and utilize our cost-effective EMI options. Just convey your requirements without any
+                        hesitation.</p>
+                </div>
+                <div class="reason">
+                    <i class="fa-solid fa-car"></i>
+                    <h1>24x7 Tours and Travels Booking</h1>
+                    <hr>
+                    <p>Well, this is important. We remain active 24 hours a day. Not only that, but our tour
+                        operator of Kolkata aims to get in touch with the tourists during the trip to make sure that
+                        the travellers are safe. Our exclusive deals will blow your mind.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact part -->
+
+
+        <section class="contact_us" id="go_to_contact">
+            <h1 class="contact_heading">How to Reach Us?</h1>
+            <div class="contact_main">
+                <div class="map_part">
+                    <h4>Our Address</h4>
+                    <p>We are located at Harish Mukherjee Road, near PG Hospital, Pin- 700025</p>
+                    <!-- <p>For additional questions, you can call us at +91-1234567890 or you can also email us at info@yourtraveladvisor.com</p> -->
+
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.247681619609!2d88.34124511491014!3d22.53239278520347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027738a2f6ef5b%3A0xc76c4313c4f5ad44!2sHarish%20Mukherjee%20Rd%2C%20Bhowanipore%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1678902615487!5m2!1sen!2sin"
+                            width="100%" height="380" style="border:1;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="form_part">
+                    <h4>Got a Question?</h4>
+                    <p>Submit the form to book a preferred meeting time. we'll get back to you soon!</p>
+                    <form class="contact_form">
+                        <input type="text" name="name" placeholder="Name*">
+                        <input type="text" name="phone" placeholder="Mobile*">
+                        <input type="email" name="email" placeholder="Email Id*">
+                        <select name="Day" class="day">
+                            <option value="--Select--">--Select preferred Day--</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                        </select>
+                        <select name="Time" class="time">
+                            <option value="--Select--">--Select preferred Slot--</option>
+                            <option value="11:30 am-12:30 pm">11:30 am-12:30 pm</option>
+                            <option value="1:30 pm-2:30 pm">1:30 pm-2:30 pm</option>
+                            <option value="2:30 pm-3:30 pm">2:30 pm-3:30 pm</option>
+                            <option value="3:30 pm-4:30 pm">3:30 pm-4:30 pm</option>
+                            <option value="4:30 pm-5:30 pm">4:30 pm-5:30 pm</option>
+                        </select>
+                        <input type="submit" value="Submit">
+
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer part -->
+
+    <footer class="footer_main">
+        <div class="footer_part">
+
+            <div class="footer_items" id="quick_links">
+                <h3>Quick Links</h3>
+                <p>About Us</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Help</p>
+                <p>Tours</p>
+            </div>
+            <div class="footer_items" id="support">
+                <h3>Support</h3>
+                <p>Our Location</p>
+                <p>The Hosts</p>
+                <p>About</p>
+                <p>Contact</p>
+                <p>News</p>
+            </div>
+            <div class="footer_items" id="contact_info">
+                <h3>Contact Info</h3>
+                <p>98/b, Panihati More</p>
+                <p>Harish Mukherjee Road</p>
+                <p>West Bengal- 700025</p>
+                <p>+91-1234567890</p>
+                <p>info@yourtraveladvisor.com</p>
+            </div>
+            <div class="footer_items" id="connect">
+                <h3>Connect</h3>
+                <i class="fa-brands fa-facebook" style="color: blue;"></i>
+                <i class="fa-brands fa-instagram" style="color: rgb(222, 78, 78);"></i>
+                <i class="fa-brands fa-square-twitter" style="color: rgb(116, 205, 241);"></i>
+                <i class="fa-brands fa-linkedin" style="color: rgb(32, 32, 151);"></i>
+                <i class="fa-brands fa-youtube" style="color: red;"></i>
+            </div>
+        </div>
+        <p class="copyright">Copyright &copy;2023 All rights reserved | Image source: Google </p>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+
+        <script src="js/Home.js"></script>
+
+
+</body>
+
+</html>

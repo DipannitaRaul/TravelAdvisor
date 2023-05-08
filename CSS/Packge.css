@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navigation bar */
+
+nav{
+    padding: 0px 120px;
+    /* background-color: rgb(122, 122, 154); */
+    background: rgb(143, 199, 209);
+}
+.nav-link{
+    font-size: 18px;
+    font-weight: bold;
+}
+/* .nav-link:hover{
+    background-color: orange;
+} */
+.navbar-nav{
+    margin: 0px auto;
+}
+.nav-item{
+    margin: 0px 15px;
+}
+form a{
+    text-decoration: none;
+    color: white;
+}
+.dropdown-menu{
+    background-color: rgb(143, 199, 209) !important;
+    border: none !important;
+    color: white !important;
+    text-align: center;
+}
+
+/* Banner Carousel */
+
+.carousel-item{
+    height: 90vh;
+    min-height: 400px;
+    position: relative;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+.w-100{
+    height: 100vh;
+}
+
+/* Types Of packages */
+
+.type{
+    padding: 40px 0px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(245, 239, 223), rgb(224, 214, 214), rgb(177, 174, 174));
+}
+.type h1{
+    color: rgb(136, 105, 66);
+    font-weight: bold;
+}
+.type p{
+    color: rgb(110, 103, 103);
+}
+
+/* For cards */
+.card{
+    margin-top: 30px;
+}
+.card-body{
+    /* background-color: wheat; */
+    background-image: linear-gradient(to top, rgb(183, 183, 222), rgb(194, 194, 226), rgb(219, 219, 236));
+}
+.card-body h5{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Asian trip */
+
+.asiantrip{
+    padding: 40px 0px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(245, 239, 223), rgb(224, 214, 214), rgb(177, 174, 174));
+}
+.asiantrip h1{
+    color: rgb(136, 105, 66);
+    font-weight: bold;
+}
+.asiantrip p{
+    color: rgb(110, 103, 103);
+}
+
+/* Indian trip */
+
+.indiantrip{
+    width: 100%;
+    overflow: hidden;
+    /* padding: 80px 70px; */
+    padding: 40px 0px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(245, 239, 223), rgb(224, 214, 214), rgb(177, 174, 174));
+}
+.indiantrip h1{
+    color: rgb(136, 105, 66);
+    font-weight: bold;
+}
+.indiantrip p{
+    color: rgb(110, 103, 103);
+}
+
+/* Footer part */
+
+.footerpart{
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 20px;
+    background-image: url(https://www.joegastro.co.uk/wp-content/uploads/2016/08/footer-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.footerpart p{
+    font-size: 15px;
+}
+.footerpart h5{
+    font-weight: bold;
+    line-height: 40px;
+}
+.footerpart i{
+    letter-spacing: 8px;
+    font-size: 20px;
+}
+.copyright{
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:991px){
+.nav-link{
+    text-align: center;
+    font-size: 25px;
+}
+#startbtn{
+    margin: auto;
+}
+.dropdown-item{
+    text-align: center !important;
+    font-size: 16px !important;
+}
+}
+
+@media screen and (max-width:767px){
+    .footerpart{
+        text-align: center;
+    }
+}

@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navigation Bar */
+
+nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgb(188, 232, 225); */
+    position: fixed;
+    z-index: 1;
+    /* background-color: transparent; */
+    /* background-color: rgb(122, 122, 154); */
+    background-color: rgba(124, 189, 200);
+    align-items: center;
+    padding: 15px 0px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: orange;
+}
+
+/* Banner Part */
+
+.banner{
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(125,125,125,0.3)) ,url(https://images.herzindagi.info/image/2022/Jul/destination.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.banner_text{
+    /* background: rgba(41, 40, 40, 0.4); */
+    border-radius: 30px;
+    width: 35%;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    text-align: center;
+    color: white;
+    padding: 30px 25px;
+    line-height: 80px;
+}
+.banner img{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.banner h1{
+    font-size: 60px;
+}
+
+/* Booking Part */
+
+.booking_part{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(251, 247, 240);
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.booking_img img{
+    border-radius: 30px;
+}
+.booking_form{
+    padding: 0px 20px;
+    text-align: center;
+}
+.booking_form h1{
+    font-size: 45px;
+    color: rgb(110, 110, 224);
+}
+.booking_form p{
+    font-size: 20px;
+    margin: 25px;
+}
+input{
+    /* display: block; */
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-left: 5px;
+    font-size: 16px;
+    color: grey;
+}
+.month{
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-left: 5px;
+    font-size: 16px;
+    color: grey;
+}
+.traveltype{
+    display: block;
+    width: 100%;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-left: 5px;
+    font-size: 16px;
+    color: grey;
+}
+input[type='submit']{
+    /* display: block; */
+    width: 30%;
+    margin-top: 40px;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+input[type='submit']:hover{
+    background-color: rgb(65, 65, 230);
+    font-weight: bold;
+    border: 2px dotted white;
+}
+
+/* Gallery part */
+
+.gallery_part{
+    width: 100%;
+    height: auto;
+    padding: 50px 40px;
+    /* background-color: rgb(251, 247, 240); */
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(125, 125, 125, 0.4)) ,url(https://iso.500px.com/wp-content/uploads/2014/07/hong-kong-cityscape1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gallery_part h1{
+    font-size: 45px;
+    text-align: center;
+    color: orange;
+}
+.gallery1, .gallery2, .gallery3{
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.gallery1 img:hover{
+    transform: scale(1.05);
+    opacity: 0.7;
+}
+.gallery2 img:hover{
+    transform: scale(1.05);
+    opacity: 0.7;   
+}
+.gallery3 img:hover{
+    transform: scale(1.05);
+    opacity: 0.7;
+}
+
+/* Footer Part */
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 20px 20px;
+    background-image: url(https://www.joegastro.co.uk/wp-content/uploads/2016/08/footer-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    cursor: pointer;
+}
+.footer_part{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer_items{
+    flex-basis: 15%;
+    padding: 20px;
+}
+.footer_items h3{
+    margin-bottom: 10px;
+}
+.footer_items p{
+    font-size: 15px;
+    margin: 15px 0px;
+}
+#connect i{
+    letter-spacing: 8px;
+    font-size: 20px;
+}
+.copyright{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Responsive design */
+
+@media screen and (max-width:1199px){
+    .gallery1, .gallery2, .gallery3{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .gallery1 img, .gallery2 img, .gallery3 img{
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width:991px){
+    .banner_text{
+        padding: 20px 10px;
+    }
+    .booking_part{
+        height: 900px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .booking_img{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:767px){
+    nav{
+        flex-direction: column;
+        line-height: 35px;
+    }
+    .footer_items{
+        flex-basis: 10%;
+    }
+    footer{
+        padding: 20px 30px;
+    }
+    
+}
+
+@media screen and (max-width:575px){
+    nav ul li{
+        padding: 0 10px;
+    }
+    .banner{
+        height: 700px;
+    }
+    .banner_text{
+        top: 30%;
+    }
+    .banner img{
+        top: 30%;
+        left: 20%;
+    }
+    .booking_part{
+        height: 950px;
+    }
+    .booking_img img{
+        width: 300px;
+    }
+    input[type='submit']{
+        font-size: 15px;
+    }
+    .footer_part{
+        flex-direction: column;
+    }
+    .footer_items{
+        text-align: center;
+        margin: 10px;
+        padding: 20px;
+    }
+    .footer_items h3{
+        font-size: 20px;
+    }
+    .footer_items p{
+        font-size: 15px;
+    }
+    .copyright{
+        line-height: 25px;
+    }
+}

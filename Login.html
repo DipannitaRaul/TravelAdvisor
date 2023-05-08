@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/Login.css">
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/7ff712a10f.js" crossorigin="anonymous"></script>
+    <title>Travel Advisor/get started</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="logo" width="80px">
+            </div>
+            <ul>
+                <li><a href="Home.html" onclick="beActive(1)" id="home_link">Home</a></li>
+                <li><a href="Home.html" onclick="beActive(2)" id="about_link">About</a></li>
+                <li><a href="Package.html" onclick="beActive(3)" id="package_link">Packages</a></li>
+                <li><a href="#go_to_gallery" onclick="beActive(4)" id="gallery_link">Our Gallery</a></li>
+                <li><a href="#go_to_contact" onclick="beActive(5)" id="contact_link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- banner part -->
+
+     <section class="banner">
+        <img src="https://wilder.qodeinteractive.com/wp-content/uploads/2022/09/h5-rev-icon.png" alt="img">
+        <div class="banner_text">
+        <h1>Let's Travel And Explore</h1>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- register part -->
+
+        <section class="booking_part">
+                <div class="booking_img">
+                    <img src="https://wilder.qodeinteractive.com/wp-content/uploads/2022/09/h5-img-01.jpg" alt="img"
+                        width="400px">
+
+                </div>
+                <div class="booking_form">
+                    <h1>Book Destination</h1>
+                    <p>Discover new attractions and experiences to match your interests and travel style</p>
+                    <form>
+                        <input type="text" name="destination" placeholder="Destination">
+                        <select name="month" class="month">
+                            <option value="select">Month</option>
+                            <option value="jan">January</option>
+                            <option value="feb">February</option>
+                            <option value="mar">March</option>
+                            <option value="april">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="july">July</option>
+                            <option value="aug">August</option>
+                            <option value="sept">September</option>
+                            <option value="oct">October</option>
+                            <option value="nov">November</option>
+                            <option value="dec">December</option>
+                        </select>
+
+                        <select name="traveltype" class="traveltype">
+                            <option value="traveltype">Travel Type...</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="staycation">Staycation</option>
+                            <option value="historical">Historical</option>
+                            <option value="popular">Popular</option>
+                            <option value="romantic">Romantic</option>
+                            <input type="submit" value="Search">
+                    </form>
+
+                </div>
+        </section>
+
+        <!-- gallery part -->
+
+        <section class="gallery_part" id="go_to_gallery">
+                <h1>Our Tourist's Gallery</h1>
+                <div class="gallery1">
+                    <img src="https://storage.googleapis.com/mcp_236blog/uploads/2018/10/sfsdfsdfdf-1-1920x1000.jpg"
+                        alt="img" width="400">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/a1/e4/14/a-great-group-of-family.jpg?w=1200&h=-1&s=1"
+                        alt="img" width="200">
+                    <img src="https://www.tourism-of-india.com/blog/wp-content/uploads/2021/06/phuket-in-june-for-honeymoon.jpg"
+                        alt="img" width="400">
+
+                </div>
+                <div class="gallery2">
+                    <img src="https://blog.sotc.in/wp-content/uploads/2020/01/Mountains-Are-Calling-1.jpg" alt="img"
+                        width="500">
+                    <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/12/Ladakh-winter.jpg" alt="img"
+                        width="400">
+                </div>
+
+                <div class="gallery3">
+                    <img src="https://wilder.qodeinteractive.com/wp-content/uploads/2022/09/h5-img-05.jpg" alt="img"
+                        width="300">
+                    <img src="https://globalgrasshopper.com/wp-content/uploads/2011/01/Most-beautiful-places-to-visit-in-India.jpg"
+                        alt="img" width="400">
+                    <img src="../images/gallery.jpg" alt="img" width="300">
+
+                </div>
+        </section>
+
+    </main>
+
+    <!-- footer part -->
+
+    <footer class="footer_main" id="go_to_contact">
+            <div class="footer_part">
+
+                <div class="footer_items" id="quick_links">
+                    <h3>Quick Links</h3>
+                    <p>About Us</p>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>Help</p>
+                    <p>Tours</p>
+                </div>
+                <div class="footer_items" id="support">
+                    <h3>Support</h3>
+                    <p>Our Location</p>
+                    <p>The Hosts</p>
+                    <p>About</p>
+                    <p>Contact</p>
+                    <p>News</p>
+                </div>
+                <div class="footer_items" id="contact_info">
+                    <h3>Contact Info</h3>
+                    <p>98/b, Panihati More</p>
+                    <p>Harish Mukherjee Road</p>
+                    <p>West Bengal- 700025</p>
+                    <p>+91-1234567890</p>
+                    <p>info@yourtraveladvisor.com</p>
+                </div>
+                <div class="footer_items" id="connect">
+                    <h3>Connect</h3>
+                    <i class="fa-brands fa-facebook" style="color: blue;"></i>
+                    <i class="fa-brands fa-instagram" style="color: rgb(222, 78, 78);"></i>
+                    <i class="fa-brands fa-square-twitter" style="color: rgb(116, 205, 241);"></i>
+                    <i class="fa-brands fa-linkedin" style="color: rgb(32, 32, 151);"></i>
+                    <i class="fa-brands fa-youtube" style="color: red;"></i>
+                </div>
+            </div>
+            <p class="copyright">Copyright &copy;2023 All rights reserved | Image source: Google </p>
+    </footer>
+
+    <script src="JS/Login.js"></script>
+</body>
+
+</html>

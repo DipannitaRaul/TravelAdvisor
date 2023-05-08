@@ -1,0 +1,643 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Navigation Bar */
+
+.navbar{
+    /* background-color: rgb(122, 122, 154); */
+    background: rgba(124, 189, 200,0.9);
+    height: auto;
+    padding: 10px 120px;
+
+}
+.nav-link{
+    font-size: 18px;
+    font-weight: bold;
+    color: white !important;
+}
+.navbar-nav{
+    margin: 0px auto;
+}
+.active{
+    color: orange !important;
+}
+.nav-link:hover{
+    color: orange !important;
+}
+.nav-item{
+    margin: 0px 15px;
+}
+form a{
+    text-decoration: none;
+    color: white;
+}
+/* .startbtn{
+    display: inline-block;
+} */
+.dropdown-menu{
+    background-color: rgba(124, 189, 200,0.9);
+    border: none;
+}
+
+/* Banner Part */
+
+.banner{
+    width: 100%;
+    height: 700px;
+    /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(125,125,125,0.3)) ,url(https://media.cntraveler.com/photos/5fc68194225457188dc8081b/master/w_2955,h_1970,c_limit/Venice-GettyImages-997402230.jpg); */
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(125,125,125,0.3)) ,url(https://media.nomadicmatt.com/2022/halongbaycheap.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner_text{
+    background: rgba(41, 40, 40, 0.4);
+    border-radius: 30px;
+    width: 80%;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    text-align: center;
+    color: white;
+    padding: 30px 25px;
+    line-height: 35px;
+}
+.banner h1{
+    padding-bottom: 0;
+    font-size: 55px;
+    font-weight: bold;
+}
+.banner p{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.banner input[type='text']{
+    width: 60%;
+    height: 30px;
+    padding: 2px 5px;
+}
+.banner input[type='submit']{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(62, 60, 60), rgb(212, 93, 93), rgb(154, 137, 107));
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* About part */
+
+.about{
+    /* background-color: rgb(229, 217, 193); */
+    background-color: rgb(230, 251, 248);
+    width: 100%;
+    height: auto;
+    padding: 30px 130px;
+    text-align: center;
+}
+.about h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(231, 110, 110);
+}
+.about_img{
+    text-align: center;
+    padding: 20px 0px;
+}
+.about_img img{
+    width: 100%;
+    height: 450px;
+}
+.about_text{
+    color: rgb(231, 110, 110);
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+.about hr{
+    margin: 20px 0;
+}
+.about_text i{
+    /* margin-left: 50%; */
+    font-size: 40px;
+    color: black;
+}
+.quote{
+    /* margin: 0 50px; */
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.author{
+    color: black;
+    text-align: center;
+    line-height: 0;
+}
+
+/* Packages Part */
+
+.packages{
+    width: 100%;
+    height: auto;
+    padding: 50px 50px;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(125,125,125,0.5)) ,url(https://www.fabhotels.com/blog/wp-content/uploads/2019/01/Tawang.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.packages h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0;
+    color: rgb(233, 189, 107);
+    text-shadow: 4px 4px black;
+}
+.inter_trips{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.inter_places{
+    flex-basis: 20%;
+    background-image: linear-gradient(to bottom, rgb(245, 239, 223), rgb(169, 207, 213), rgb(143, 202, 223));
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: 5px solid rgb(234, 228, 228);
+}
+.inter_places img{
+    border: 2px dotted black;
+    height: 200px;
+}
+.inter_places p{
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(58, 56, 56);
+    text-shadow: 2px 2px rgb(237, 232, 232);
+}
+.indian_trips{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.indian_places{
+    flex-basis: 20%;
+    background-image: linear-gradient(to bottom, rgb(245, 239, 223), rgb(169, 207, 213), rgb(143, 202, 223));
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: 5px solid rgb(234, 228, 228);
+}
+.indian_places img{
+    border: 2px dotted black;
+    height: 200px;
+}
+.indian_places p{
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(58, 56, 56);
+    text-shadow: 2px 2px rgb(237, 232, 232);
+}
+.tripBtn{
+    width: 100px;
+    height: 35px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.tripBtn:hover{
+    background-color: white;
+    color: orange;
+    font-weight: bold;
+}
+.inter_places:hover, .indian_places:hover{
+    transform: scale(0.95);
+    background-color: rgb(233, 189, 107);
+    background-image: linear-gradient(to bottom, rgb(245, 239, 223), rgb(169, 207, 213), rgb(143, 202, 223));
+}
+
+/* Choose part */
+
+.choose{
+    /* background-color: rgb(232, 224, 209); */
+    background-color: rgb(230, 251, 248);
+    width: 100%;
+    height: auto;
+    padding: 60px 120px;
+}
+.choose_heading{
+    font-size: 30px !important;
+    font-weight: bold;
+}
+.choose h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(231, 110, 110);
+}
+.choose p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 22px;
+}
+.reasons_para1{
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 20px 20px; */
+}
+.reasons_para2{
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 20px 20px; */
+}
+.reason{
+    flex-basis: 40%;
+    border: 1px solid rgb(231, 110, 110);
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+.reason:hover{
+    background-color: rgb(243, 235, 235);
+}
+.choose hr{
+    margin-bottom: 20px;
+}
+.choose i{
+    font-size: 40px;
+    color: rgb(72, 72, 184);
+}
+
+/* contact part */
+
+.contact_us{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(125,125,125,0.5)) ,url(https://www.mistay.in/travel-blog/content/images/2022/10/Best-Weekend-Travel-Destinations-Near-Kolkata.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 50px;
+    text-align: center;
+}
+.contact_main{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact_heading{
+    text-align: center;
+    font-size: 30px;
+    /* color: rgb(231, 110, 110); */
+    color: orange;
+    font-weight: bold;
+    padding: 20px;
+}
+.contact_main h4{
+    color: white;
+    font-weight: bold;
+    color: rgb(241, 208, 147);
+}
+.contact_main p{
+    padding: 0;
+    text-align: center;
+    line-height: 30px;
+    /* color: rgb(92, 87, 87); */
+    color: white;
+    font-weight: bold;
+}
+.map_part{
+    /* margin-top: 40px; */
+    width: 40%;
+    padding: 25px 20px;
+}
+.form_part{
+    width: 40%;
+    padding: 25px 20px;
+}
+.contact_form{
+    background: rgba(218, 229, 238, 0.3);
+    padding: 20px 20px;
+}
+.form_part input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding-left: 6px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+}
+.form_part input[type='submit']{
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    border: 2px dotted blue;
+}
+.form_part input[type='submit']:hover{
+    background-color: blue;
+    color: white;
+    border: 2px dotted white;
+}
+.day, .time{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 6px;
+    color: grey;
+}
+
+/* Footer part */
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 20px 20px;
+    background-image: url(https://www.joegastro.co.uk/wp-content/uploads/2016/08/footer-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    cursor: pointer;
+}
+footer h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer_part{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer_items{
+    flex-basis: 15%;
+    padding: 20px;
+}
+.footer_items h3{
+    margin-bottom: 10px;
+}
+.footer_items p{
+    font-size: 15px;
+    margin: 15px 0px;
+}
+#connect i{
+    letter-spacing: 8px;
+    font-size: 20px;
+}
+.copyright{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width:1199px){
+    .packages{
+        padding: 50px 20px;
+    }
+    .inter_places{
+        padding: 5px;
+    }
+    .indian_places{
+        padding: 5px;
+    }
+    .footer_items{
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width:991px){
+    #navbar{
+        background: rgba(124, 189, 200,0.9);
+    }
+    .nav-link{
+        text-align: center;
+        font-size: 25px;
+    }
+    .dropdown-item{
+        text-align: center;
+        font-size: 16px;
+    }
+    #startbtn{
+        margin: auto;
+    }
+    .banner_text{
+        top: 37%;
+    }
+    .packages h1{
+        font-size: 35px;
+    }
+    .inter_trips{
+        flex-direction: column;
+        padding: 0px 30px;
+    }
+    .inter_places{
+        margin: 20px;
+        padding: 40px;
+    }
+    .inter_places img{
+        width: 90%;
+        height: 350px;
+    }
+    .inter_places p{
+        font-size: 30px;
+    }
+    .indian_trips{
+        flex-direction: column;
+        padding: 0px 30px;
+    }
+    .indian_places{
+        margin: 20px;
+        padding: 30px;
+    }
+    .indian_places img{
+        width: 90%;
+        height: 350px;
+    }
+    .indian_places p{
+        font-size: 30px;
+    }
+    .reasons_para1{
+        flex-direction: column;
+    }
+    .reasons_para2{
+        flex-direction: column;
+    }
+    .reason{
+        margin: 20px;
+    }
+    .contact_us{
+        padding: 30px 30px;
+    }
+    .form_part input[type='submit']{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:767px){
+    .banner_text{
+        top: 38%;
+        line-height: 50px;
+    }
+    .banner_text h1{
+        font-size: 40px;
+    }
+    .about{
+        padding: 30px 100px;
+    }
+    .about_img img{
+        height: 300px;
+    }
+    .packages{
+        padding: 50px 25px;
+    }
+    .packages h1{
+        font-size: 30px;
+    }
+    .inter_trips{
+        flex-direction: column;
+    }
+    .inter_places{
+        margin: 20px;
+        padding: 30px;
+        font-size: 25px;
+    }
+    .indian_trips{
+        flex-direction: column;
+    }
+    .indian_places{
+        margin: 20px;
+        padding: 20px;
+    }
+    .inter_places img, .indian_places img{
+        width: 100%;
+        height: 200px;
+    }
+    .tripBtn{
+        width: 120px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .choose{
+        padding: 20px 70px;
+    }
+    .reason{
+        padding: 20px 30px;
+    }
+    .contact_us{
+        padding: 30px 80px;
+    }
+    .contact_main{
+        flex-direction: column;
+    }
+    .map_part, .form_part{
+        width: 100%;
+    }
+   .footer_part{
+    flex-direction: column;
+   }
+   .footer_items{
+    text-align: center;
+   }
+   .footer_items p{
+    font-size: 18px;
+   }
+    
+}
+
+@media screen and (max-width:575px){
+    .nav-link{
+        font-size: 16px;
+    }
+    .banner{
+        height: 700px;
+    }
+    .banner_text{
+        top: 32%;
+    }
+    .banner_text h1{
+        font-size: 45px;
+    }
+    .about{
+        padding: 30px 80px;
+    }
+    .about_img img{
+        width: 100%;
+    }
+    .packages h1{
+        font-size: 28px;
+    }
+    .inter_trips{
+        flex-direction: column;
+    }
+    .inter_places{
+        margin: 20px;
+        padding: 20px;
+    }
+    .inter_places p{
+        font-size: 20px;
+    }
+    .inter_places img{
+        width: 100%;
+        height: 200px;
+    }
+    .indian_trips{
+        flex-direction: column;
+    }
+    .indian_places{
+        margin: 20px;
+        padding: 20px;
+    }
+    .indian_places p{
+        font-size: 20px;
+    }
+    .indian_places img{
+        width: 100%;
+        height: 200px;
+    }
+    .reason h1{
+        font-size: 18px;
+    }
+    .reason p{
+        font-size: 15px;
+    }
+    .footer_part{
+        flex-direction: column;
+    }
+    .footer_items{
+        text-align: center;
+        margin: 10px;
+        padding: 20px;
+    }
+    .footer_items h3{
+        font-size: 20px;
+    }
+    .footer_items p{
+        font-size: 15px;
+    }
+    .map{
+        width: 100%;
+    }
+    .copyright{
+        line-height: 25px;
+    }
+}
